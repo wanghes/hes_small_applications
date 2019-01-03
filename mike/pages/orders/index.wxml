@@ -1,0 +1,46 @@
+<view class="page">
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="inner">
+	    		<view class="label">121212121</view>
+	    		<view class="date">2018-10-19</view>
+	    	</view>
+	    	<view  class="inner">
+	    		<view class="money">100.00</view>
+	    		<view class="info">待付款</view>
+	    	</view>
+	    </i-col>
+	</i-row>
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="inner">
+	    		<view class="label">1213232323</view>
+	    		<view class="date">2018-10-19</view>
+	    	</view>
+	    	<view  class="inner">
+	    		<view class="money">100.00</view>
+	    		<view class="info">已完成</view>
+	    	</view>
+	    </i-col>
+	</i-row>
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="inner">
+	    		<view class="label">123231232131</view>
+	    		<view class="date">2018-10-19</view>
+	    	</view>
+	    	<view  class="inner">
+	    		<view class="money">100.00</view>
+	    		<view class="info">已完成</view>
+	    	</view>
+	    </i-col>
+	</i-row>
+</view>
+
+<i-tab-bar current="{{ current }}" bindchange="handleChangeTab" fixed>
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="products" icon="label" current-icon="label_fill" title="产品"></i-tab-bar-item>
+    <i-tab-bar-item key="coupons" icon="coupons" current-icon="coupons_fill"  title="财务"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="createtask" current-icon="createtask_fill" count="3" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>

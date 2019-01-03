@@ -1,0 +1,58 @@
+<view class="page">
+    <i-cell-group>
+    	<i-panel class="cell-panel-demo">
+		    <i-cell title="张三丰" label="一卡会员" value="{{user.phone}}"></i-cell>
+		</i-panel>
+	    <i-cell title="会员级别" is-link value="{{user.level}}" url="/pages/member/index"></i-cell>
+	    <i-cell title="门店级别" is-link value="{{user.storeLevel}}" url="/pages/store/index"></i-cell>
+	</i-cell-group>
+
+
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="label">可提现金额</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	    <i-col span="12" i-class="item">
+	    	<view class="label">电子币</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	    <i-col span="12" i-class="item">
+	    	<view class="label">奖金币</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	    <i-col span="12" i-class="item">
+	    	<view class="label">提货币</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	    <i-col span="12" i-class="item">
+	    	<view class="label">积分</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	</i-row>
+
+
+	<i-panel title="快捷操作">
+		<i-cell-group>
+		    <i-cell title="奖金币提现" is-link url="/pages/bonusWithdraw/index"></i-cell>
+		    <i-cell title="奖金币转换" is-link url="/pages/bonusConvert/index"></i-cell>
+		    <i-cell title="奖金币转账" is-link url="/pages/bonusTransfer/index"></i-cell>
+		    <i-cell title="电子币拨付" is-link url="/pages/eCoinOut/index"></i-cell>
+		    <i-cell title="提货币转账" is-link url="/pages/fetchCoinTransfer/index"></i-cell>
+	    </i-cell-group>
+	</i-panel>
+
+</view>
+<i-tab-bar current="{{ current }}" bindchange="handleChange" fixed>
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="products" icon="label" current-icon="label_fill" title="产品"></i-tab-bar-item>
+    <i-tab-bar-item key="coupons" icon="coupons" current-icon="coupons_fill"  title="财务"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="createtask" current-icon="createtask_fill" count="3" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
+
+<i-action-sheet visible="{{ visible1 }}" actions="{{ levels }}"  bind:click="handleClickLevel" />
+<i-action-sheet visible="{{ visible2 }}" actions="{{ stores }}"  bind:click="handleClickStore" />
+
+
+<i-message id="message" />

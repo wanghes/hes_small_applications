@@ -1,0 +1,11 @@
+<i-alert type="warning">
+    此绑定银行卡将用于用户提现唯一指定银行卡，一经绑定，不可修改，请绑定时准确核实！
+</i-alert>
+<i-panel title="实名信息">
+    <i-input value="张三" title="开户人姓名" placeholder="开户人姓名" />
+    <i-input value="张三" title="开户银行" placeholder="开户银行  " />
+    <i-input value="130821236598568987" title="银行卡号" placeholder="银行卡号" />
+    <i-input value="15678903354" title="预留手机号" placeholder="预留手机号" />
+</i-panel>
+
+<i-button type="primary">提交</i-button>

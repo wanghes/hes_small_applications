@@ -1,0 +1,23 @@
+<view class="page">
+   
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="label">可转账付金额（元）</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	</i-row>
+
+	<i-cell-group>
+		<i-input value="100" title="拨付金额" placeholder="请填写转账金额" />
+		<i-cell title="接受平台" is-link value="{{platform}}" bind:click="handleOpenPlatforms"></i-cell>
+		<i-input value="" title="转账门店账号" placeholder="请填写转账门店账号" />
+		<i-input value="" type="password" title="转账密码" placeholder="请填写拨付密码" />
+	    <i-input value="" type="textarea" title="备注信息" placeholder="请填写备注信息" />
+	</i-cell-group>
+
+	<i-button type="primary">确认转账</i-button>
+</view>
+
+
+<i-action-sheet visible="{{ visible }}" actions="{{ platforms }}"  bind:click="handleClickPlatform" />
+<i-message id="message" />

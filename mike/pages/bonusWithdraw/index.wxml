@@ -1,0 +1,25 @@
+<view class="page">
+   
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="label">可提现金额（元）</view>
+	    	<view class="money">3000.00</view>
+	    </i-col>
+	</i-row>
+
+	<i-cell-group>
+		<i-input value="100" title="提现金额" placeholder="请填写提现金额" />
+	    <i-cell title="提现手续费"  value="3%"></i-cell>
+	    <i-cell title="到账金额"  value="￥97.00"></i-cell>
+	    <i-input value="" title="开户银行" placeholder="请填写开户银行" />
+	    <i-input value="" title="开户人姓名" placeholder="请填写开户人姓名" />
+	    <i-input value="" title="银行卡号" placeholder="请填写银行卡号" />
+	    <i-input value="" title="提现密码" placeholder="请填写提现密码" />
+	</i-cell-group>
+
+	<i-button type="primary">确认提现</i-button>
+</view>
+
+
+
+<i-message id="message" />

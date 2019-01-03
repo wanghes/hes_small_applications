@@ -1,0 +1,49 @@
+<view class="page">
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="inner">
+	    		<view class="label">消费业绩奖</view>
+	    		<view class="date">2018-10-19</view>
+	    	</view>
+	    	<view  class="inner">
+	    		<view class="money">100.00</view>
+	    		<view class="info">会员张飒主动消费</view>
+	    	</view>
+	    </i-col>
+	</i-row>
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="inner">
+	    		<view class="label">消费业绩奖</view>
+	    		<view class="date">2018-10-19</view>
+	    	</view>
+	    	<view  class="inner">
+	    		<view class="money">100.00</view>
+	    		<view class="info">会员张飒主动消费</view>
+	    	</view>
+	    </i-col>
+	</i-row>
+	<i-row i-class="kuai">
+	    <i-col span="24" i-class="top_item">
+	    	<view class="inner">
+	    		<view class="label">消费业绩奖</view>
+	    		<view class="date">2018-10-19</view>
+	    	</view>
+	    	<view  class="inner">
+	    		<view class="money">100.00</view>
+	    		<view class="info">会员张飒主动消费</view>
+	    	</view>
+	    </i-col>
+	</i-row>
+</view>
+
+<i-page current="{{ current }}" total="5" bind:change="handleChange">
+    <view slot="prev">
+        <i-icon type="return"></i-icon>
+        上一步
+    </view>
+    <view slot="next">
+        下一步
+        <i-icon type="enter"></i-icon>
+    </view>
+</i-page>

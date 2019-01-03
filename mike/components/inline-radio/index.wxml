@@ -1,0 +1,10 @@
+<view class="radios">
+    <view wx:if="{{ title }}" class="radios-title {{ hideTop ? 'radios-title-hide-top' : '' }}">{{ title }}</view>
+    <view class="radios-content {{ hideBorder ? 'radios-without-border' : '' }}">
+    	<radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{ list }}" wx:key="{{ item.value }}">
+                <radio value="{{ item.value }}" checked="{{ item.checked }}"/>{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+</view>

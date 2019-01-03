@@ -1,0 +1,18 @@
+<i-panel title="门店信息">
+    <i-cell-group>
+        <i-cell title="门店名称" value="15623233345"></i-cell>
+        <i-cell title="门店级别" value="二星"></i-cell>
+        <i-cell title="门店代码" value="￥566.0"></i-cell>
+        <i-cell title="联系人" value="银卡会员"></i-cell>
+        <i-cell title="联系电话" value="15623233345"></i-cell>
+        <i-cell title="所属区域" value="15623233345"></i-cell>
+        <i-cell title="详细地址" value="15623233345"></i-cell>
+    </i-cell-group>
+</i-panel>
+
+<i-panel i-class="mt10">
+    <i-cell-group>
+        <i-cell title="会员图谱" value="15623233345"></i-cell>
+        <i-cell title="添加会员" value="二星"></i-cell>
+    </i-cell-group>
+</i-panel>

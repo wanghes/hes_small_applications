@@ -1,0 +1,18 @@
+<i-panel title="财务管理">
+    <i-cell-group>
+        <i-cell title="奖金币流水" is-link url="/pages/bonusDetail/index"></i-cell>
+        <i-cell title="奖金币明细" is-link url="/pages/bonusDetail/index"></i-cell>
+        <i-cell title="电子币流水" is-link url="/pages/bonusDetail/index"></i-cell>
+        <i-cell title="提货币流水" is-link url="/pages/bonusDetail/index"></i-cell>
+        <i-cell title="积分流水" is-link url="/pages/bonusDetail/index"></i-cell>
+        <i-cell title="提现记录" is-link url="/pages/bonusDetail/index"></i-cell>
+    </i-cell-group>
+</i-panel>
+
+<i-tab-bar current="{{ current }}" bindchange="handleChange" fixed>
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="products" icon="label" current-icon="label_fill" title="产品"></i-tab-bar-item>
+    <i-tab-bar-item key="coupons" icon="coupons" current-icon="coupons_fill"  title="财务"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="createtask" current-icon="createtask_fill" count="3" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>

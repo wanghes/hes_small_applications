@@ -1,0 +1,7 @@
+.bg{
+	padding: 15px;
+}
+.bot{
+	border:1px solid #ccc;
+	border-bottom: 0;
+}

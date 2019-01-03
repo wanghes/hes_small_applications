@@ -1,0 +1,37 @@
+.kuai{
+	background: #fff;
+}
+.top_item{
+	display: flex;
+	padding: 30rpx 30rpx 10rpx;
+	justify-content: space-between;
+	border-bottom:1px solid #eee;
+}
+.top_item .inner{
+	float: left;
+	width: 50%;
+}
+.top_item .inner:last-child{
+	text-align: right;
+}
+.top_item .label{
+	line-height: 40rpx;
+	font-size: 30rpx;
+	color:#333;
+}
+.top_item .money{
+	line-height: 40rpx;
+	font-size: 34rpx;
+	color:#222;
+}
+.top_item .date{
+	line-height: 50rpx;
+	font-size: 24rpx;
+	color:#999;
+}
+
+.top_item .info{
+	line-height: 50rpx;
+	font-size: 30rpx;
+	color:#333;
+}

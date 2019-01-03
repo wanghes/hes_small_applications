@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/login/index",
+    "pages/index/index",
+    "pages/fetchCoinTransfer/index",
+    "pages/eCoinOut/index",
+    "pages/bonusTransfer/index",
+    "pages/bonusConvert/index",
+    "pages/bonusWithdraw/index",
+    "pages/management/index",
+    "pages/orders/index",
+    "pages/addMember/index",
+    "pages/bonusDetail/index",
+    "pages/store/index",
+    "pages/bankCardBind/index",
+    "pages/realAuth/index",
+    "pages/member/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2d8cf0",
+    "navigationBarTitleText": "米客",
+    "navigationBarTextStyle": "#fff",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f5f5f5"
+  },
+  "debug": false
+}

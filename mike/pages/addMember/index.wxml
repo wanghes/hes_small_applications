@@ -1,0 +1,15 @@
+<view class="page">
+	<i-panel title="添加会员">
+	    <i-input value="张三" title="会员名称" placeholder="会员名称" />
+	    <i-input value="15634930987" title="会员手机号" placeholder="会员手机号" />
+	    <i-cell title="注册级别" is-link value="{{user.level}}" bind:click="handleOpenLevels"></i-cell>
+	    <i-input value="" title="推荐人手机号" placeholder="推荐人手机号" />
+	    <i-input value="" title="接点人手机号" placeholder="接点人手机号" />
+	    <i-cell title="接点市场" is-link value="{{user.storeLevel}}" bind:click="handleOpenStores"></i-cell>
+	</i-panel>
+	<i-button type="primary">提交</i-button>
+</view>
+
+<i-action-sheet visible="{{ visible1 }}" actions="{{ levels }}"  bind:click="handleClickLevel" />
+<i-action-sheet visible="{{ visible2 }}" actions="{{ stores }}"  bind:click="handleClickStore" />
+<i-message id="message" />

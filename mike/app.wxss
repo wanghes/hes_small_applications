@@ -1,0 +1,40 @@
+page{
+    background: #f9f9f9;
+}
+.page{
+	padding-bottom: 140rpx;
+}
+
+.border-t, .border-b , .border-l , .border-r {
+  position: relative;
+}
+
+.border-t::after, .border-b::after , .border-l::after , .border-r::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-ch);
+  transform: rotateX(60deg);
+  -ms-transform: rotateX(60deg);
+  -moz-transform: rotateX(60deg);
+  -webkit-transform: rotateX(60deg);
+  -o-transform: rotateX(60deg);
+}
+
+.border-t::after {
+  top: 0;
+}
+
+.border-b::after {
+  bottom: 0;
+}
+.border-l::after {
+  left: 0;
+}
+
+.border-r::after {
+  right: 0;
+}

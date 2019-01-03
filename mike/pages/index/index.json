@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "米客",
+  "usingComponents": {
+    "i-action-sheet": "../../dist/action-sheet/index",
+    "i-button": "../../dist/button/index",
+    "i-message": "../../dist/message/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index",
+    "i-panel": "../../dist/panel/index"
+  }
+}

@@ -1,0 +1,15 @@
+<view class="bg" style="margin-top: 100px">
+<!--     <i-input value="{{ name }}" i-class="bot" title="账号"  placeholder="询问收银员后输入" />
+    <i-input value="{{ password }}" i-class="bot" type="password"  title="密码"  placeholder="询问收银员后输入" />
+    <i-button class="login_btn" long type="primary" size="small" bind:click="doLogin">登录</i-button> -->
+
+    <view class="itemView">用户名：
+    <input class="input" name="userName" bindinput="nameInput"  placeholder="询问收银员后输入" 
+    />
+  </view>
+  <view class="itemView">密码：
+    <input type="password" bindinput="passInput"   class="input" name="password"   placeholder="询问收银员后输入" 
+    />
+  </view>
+<i-button class="login_btn" long type="primary" size="small" bind:click="doLogin">登录</i-button>
+</view>
